@@ -15,31 +15,31 @@ Rust può essere installato utilizzando il comando ufficiale `rustup`:
 
 ```bash
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
-
+```
 ## Verifica l’installazione con:
 
-rustc --version
+```rustc --version```
 
 ### 2. Clona questo repository
 
 ## Scarica i file del progetto nel tuo ambiente locale:
 
-git clone <repository_url>
-cd <nome_cartella_progetto>
+```git clone <repository_url>```
+```cd <nome_cartella_progetto>```
 
 ### 3. Configura il progetto Rust
 
 ## Assicurati che le dipendenze siano incluse. Apri il file Cargo.toml e aggiungi:
 
-[dependencies]
-bitcoin = "0.30.0"
-rand = "0.8"
+```[dependencies]```
+```bitcoin = "0.30.0"```
+```rand = "0.8"```
 
 ### 4. Compila il progetto
 
 ## Compila il progetto in modalità ottimizzata:
 
-cargo build --release
+```cargo build --release```
 
 # Esecuzione
 
@@ -47,15 +47,15 @@ cargo build --release
 
 ## Nel file main.rs, modifica l’intervallo di ricerca e l’indirizzo Bitcoin desiderato:
 
-let start: u128 = 0x80000000000000000;
-let end: u128 = 0xfffffffffffffffff;
-let target_address = "1MVDYgVaSN6iKKEsbzRUAYFrYJadLYZvvZ";
+```let start: u128 = 0x80000000000000000;```
+```let end: u128 = 0xfffffffffffffffff;```
+```let target_address = "1MVDYgVaSN6iKKEsbzRUAYFrYJadLYZvvZ";```
 
 ### 2. Avvia la ricerca
 
 ## Esegui il programma in modalità release per ottenere le migliori prestazioni:
 
-cargo run --release
+```cargo run --release```
 
 ### 3. Risultati
 
