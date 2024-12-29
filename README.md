@@ -1,7 +1,3 @@
-Grazie per la segnalazione! Ecco il README.md aggiornato, con una formattazione migliore per evitare che tutto il testo dopo i blocchi di codice venga considerato codice.
-
-Contenuto aggiornato di README.md
-
 # Bitcoin Private Key Finder
 
 Questo progetto utilizza **Rust** per cercare una chiave privata Bitcoin in un determinato intervallo e verificare se genera un indirizzo Bitcoin specifico.
