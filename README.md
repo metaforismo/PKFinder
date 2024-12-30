@@ -24,16 +24,20 @@ Verifica l’installazione con:
 
 Scarica i file del progetto nel tuo ambiente locale:
 
-```git clone <repository_url>```
-```cd <nome_cartella_progetto>```
+```bash
+	git clone <repository_url> 
+cd <nome_cartella_progetto>
+```
 
 ### 3. Configura il progetto Rust
 
 Assicurati che le dipendenze siano incluse. Apri il file Cargo.toml e aggiungi:
 
-```[dependencies]```
-```bitcoin = "0.30.0"```
-```rand = "0.8"```
+```bash
+[dependencies]
+bitcoin = "0.30.0"
+rand = "0.8"
+```
 
 ### 4. Compila il progetto
 
@@ -47,9 +51,11 @@ Compila il progetto in modalità ottimizzata:
 
 Nel file main.rs, modifica l’intervallo di ricerca e l’indirizzo Bitcoin desiderato:
 
-```let start: u128 = 0x80000000000000000;```
-```let end: u128 = 0xfffffffffffffffff;```
-```let target_address = "1MVDYgVaSN6iKKEsbzRUAYFrYJadLYZvvZ";```
+```bash
+let start: u128 = 0x80000000000000000;
+let end: u128 = 0xfffffffffffffffff;
+let target_address = "1MVDYgVaSN6iKKEsbzRUAYFrYJadLYZvvZ";
+```
 
 ### 2. Avvia la ricerca
 
