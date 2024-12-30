@@ -1,37 +1,37 @@
 # Bitcoin Private Key Finder 🔍
 
-Questo progetto utilizza **Rust** per cercare una chiave privata Bitcoin in un determinato intervallo e verificare se genera un indirizzo Bitcoin specifico.
+This project uses **Rust** to search for a Bitcoin private key within a specified range and verify if it generates a specific Bitcoin address.
 
-# Requisiti 📝
+# Requirements 📝
 
-- **Rust** [toolchain ufficiale](https://www.rust-lang.org/it)
-- Sistema operativo Linux, macOS o Windows
-- Conoscenze di base di terminale
+- **Rust** [official toolchain](https://www.rust-lang.org/)
+- Linux, macOS, or Windows operating system
+- Basic terminal knowledge
 
-# Installazione 💽
+# Installation 💽
 
-### 1. Installa Rust
-Rust può essere installato utilizzando il comando ufficiale `rustup`:
+### 1. Install Rust
+Rust can be installed using the official `rustup` command:
 
 ```bash
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 ```
-Verifica l’installazione con:
+Verify the installation with:
 
 ```rustc --version```
 
-### 2. Clona questo repository
+### 2. Clone this repository
 
-Scarica i file del progetto nel tuo ambiente locale:
+Download the project files to your local environment:
 
 ```bash
-	git clone <repository_url> 
-cd <nome_cartella_progetto>
+git clone <repository_url>
+cd <project_folder_name>
 ```
 
-### 3. Configura il progetto Rust
+### 3. Configure the Rust project
 
-Assicurati che le dipendenze siano incluse. Apri il file Cargo.toml e aggiungi:
+Ensure that dependencies are included. Open the Cargo.toml file and add:
 
 ```bash
 [dependencies]
@@ -39,17 +39,17 @@ bitcoin = "0.30.0"
 rand = "0.8"
 ```
 
-### 4. Compila il progetto
+### 4. Build the project
 
-Compila il progetto in modalità ottimizzata:
+Build the project in release mode:
 
 ```cargo build --release```
 
-# Esecuzione 💻
+# Execution 💻
 
-### 1. Configura il programma
+### 1. Configure the program
 
-Nel file main.rs, modifica l’intervallo di ricerca e l’indirizzo Bitcoin desiderato:
+In the main.rs file, modify the search range and the desired Bitcoin address:
 
 ```bash
 let start: u128 = 0x80000000000000000;
@@ -57,41 +57,39 @@ let end: u128 = 0xfffffffffffffffff;
 let target_address = "1MVDYgVaSN6iKKEsbzRUAYFrYJadLYZvvZ";
 ```
 
-### 2. Avvia la ricerca
+### 2. Start the search
 
-Esegui il programma in modalità release per ottenere le migliori prestazioni:
+Run the program in release mode for the best performance:
 
 ```cargo run --release```
 
-### 3. Risultati
+### 3. Results
 
-Se il programma trova una chiave privata valida, salverà i risultati in un file chiamato found_wallet.txt nella directory principale del progetto.
+If the program finds a valid private key, it will save the results in a file called found_wallet.txt in the project's root directory.
 
-#### Note aggiuntive
-	•	Velocità: La velocità del programma dipende dalla potenza della CPU. Per migliorare le prestazioni, considera l’uso di una GPU o un’implementazione parallela.
-	•	Limitazioni: Questo programma è progettato solo per scopi educativi. L’uso per scopi illegali è severamente vietato.
+#### Additional notes
+- Speed: The speed of the program depends on the CPU power. For better performance, consider using a GPU or a parallel implementation.
+- Limitations: This program is designed for educational purposes only. Use for illegal purposes is strictly prohibited.
 
 # Troubleshooting 
-### 1.	Problemi con la libreria Bitcoin?
-Assicurati che la libreria bitcoin sia correttamente configurata. Controlla la versione corrente con:
+### 1. Issues with the Bitcoin library?
+Ensure that the bitcoin library is properly configured. Check the current version with:
 
 ```cargo update```
 
-
-### 2.	Rust non funziona?
-Verifica che rustc e cargo siano nel tuo PATH:
+### 2. Rust is not working?
+Make sure rustc and cargo are in your PATH:
 
 ```echo $PATH```
 
+### 3. Runtime error?
+Check that the search range and Bitcoin address are correctly formatted.
 
-### 3.	Errore di runtime?
-Controlla che l’intervallo di ricerca e l’indirizzo Bitcoin siano correttamente formattati.
+# Contributing 🫂
 
-# Contribuire 🫂
+We are always open to improvements and new features. Feel free to fork the project, implement changes, and submit a pull request.
 
-Siamo sempre aperti a miglioramenti e nuove funzionalità. Sentiti libero di fare fork del progetto, implementare modifiche e inviare una pull request.
+# License 
 
-# Licenza 
-
-Questo progetto è rilasciato sotto la licenza MIT.
-
+This project is released under the MIT license.
+```
