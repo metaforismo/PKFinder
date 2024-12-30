@@ -1,14 +1,14 @@
-# Bitcoin Private Key Finder
+# Bitcoin Private Key Finder 🔍
 
 Questo progetto utilizza **Rust** per cercare una chiave privata Bitcoin in un determinato intervallo e verificare se genera un indirizzo Bitcoin specifico.
 
-# Requisiti
+# Requisiti 📝
 
 - **Rust** (toolchain ufficiale)
 - Sistema operativo Linux, macOS o Windows
 - Conoscenze di base di terminale
 
-# Installazione
+# Installazione 💽
 
 ### 1. Installa Rust
 Rust può essere installato utilizzando il comando ufficiale `rustup`:
@@ -45,7 +45,7 @@ Compila il progetto in modalità ottimizzata:
 
 ```cargo build --release```
 
-# Esecuzione
+# Esecuzione 💻
 
 ### 1. Configura il programma
 
@@ -71,7 +71,7 @@ Se il programma trova una chiave privata valida, salverà i risultati in un file
 	•	Velocità: La velocità del programma dipende dalla potenza della CPU. Per migliorare le prestazioni, considera l’uso di una GPU o un’implementazione parallela.
 	•	Limitazioni: Questo programma è progettato solo per scopi educativi. L’uso per scopi illegali è severamente vietato.
 
-# Troubleshooting
+# Troubleshooting 
 ### 1.	Problemi con la libreria Bitcoin?
 Assicurati che la libreria bitcoin sia correttamente configurata. Controlla la versione corrente con:
 
@@ -87,11 +87,11 @@ Verifica che rustc e cargo siano nel tuo PATH:
 ### 3.	Errore di runtime?
 Controlla che l’intervallo di ricerca e l’indirizzo Bitcoin siano correttamente formattati.
 
-# Contribuire
+# Contribuire 🫂
 
 Siamo sempre aperti a miglioramenti e nuove funzionalità. Sentiti libero di fare fork del progetto, implementare modifiche e inviare una pull request.
 
-# Licenza
+# Licenza 
 
 Questo progetto è rilasciato sotto la licenza MIT.
 
