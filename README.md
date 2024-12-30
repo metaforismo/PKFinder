@@ -4,7 +4,7 @@ Questo progetto utilizza **Rust** per cercare una chiave privata Bitcoin in un d
 
 # Requisiti 📝
 
-- **Rust** (toolchain ufficiale)
+- **Rust** [toolchain ufficiale](https://www.rust-lang.org/it)
 - Sistema operativo Linux, macOS o Windows
 - Conoscenze di base di terminale
 
